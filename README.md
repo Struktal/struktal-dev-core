@@ -2,8 +2,6 @@
 
 DEV-Core library for the Struktal PHP framework
 
-## Purpose
-
 > [!NOTE]
 > The Struktal-DEV-Core library provides tools and utilities for developers working with the Struktal PHP framework.
 Right now, it wraps the [Pest testing framework](https://pestphp.com/), which could also be included in the project directly to be able to use the latest features.
