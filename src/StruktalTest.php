@@ -28,6 +28,7 @@ class StruktalTest {
         if ($inGithubActions) {
             $buildCommand .= " --cache-from type=gha,scope=test --cache-to type=gha,scope=test,mode=max --build-arg BUILDKIT_INLINE_CACHE=1";
         }
+        $buildCommand .= " .";
         if (!self::execute($buildCommand)) {
             echo "<error>❌ [STRUKTAL] Failed to build test image</error>";
             exit(1);
